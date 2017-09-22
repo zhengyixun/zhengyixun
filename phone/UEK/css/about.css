@@ -1,0 +1,198 @@
+/*
+* @Author: Lenovo
+* @Date:   2017-07-20 13:27:38
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-07-21 08:50:23
+*/
+@font-face {
+  font-family: 'iconfont';  /* project id 360233 */
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot');
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.svg#iconfont') format('svg');
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+	background: #0078e6;
+	position: fixed;
+	z-index: 999;
+}
+.haitun{
+	width: 0.72rem;
+	height: 0.67rem;
+	float: left;
+	margin-left: 2.7rem;
+	margin-top: 0.15rem;
+}
+.haitun img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+h3{
+	font-size: 0.36rem;
+	float: left;
+	text-align: center;
+	line-height: 0.92rem;
+	color: #fff;
+	font-family: "黑体";
+}
+.banner{
+	width: 100%;
+	height: 2.8rem;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.shouye{
+	width: 100%;
+	height: 0.86rem;
+	background: #f5f6fa;
+	font-size: 0.21rem;
+	font-family: "黑体";
+	line-height: 0.86rem;
+}
+.shouye a{
+	font-size: 0.21rem;
+	font-family: "黑体";
+	line-height: 0.86rem;
+	color: #494747;
+	display: block;
+	margin-left: 0.2rem;
+}
+.gaishu{
+	width: 100%;
+	height: 0.64rem;
+	background: #f5f6fa;
+}
+.gaishu1{
+	width: 7.05rem;
+	height: 0.64rem;
+	margin: 0 auto;
+	background: #fff;
+}
+.gaishu1-left{
+	width: 0.42rem;
+	height: 100%;
+	background: #fff;
+	float: left;
+}
+.gaishu1-right{
+	width: 6.23rem;
+	height: 100%;
+	background: #fff;
+	float: left;
+	border-bottom: 0.01rem dashed #999999;
+	font-size: 0.24rem;
+	line-height: 0.7rem;
+	box-sizing: border-box;
+}
+.gs-left1{
+	width: 0.08rem;
+	height: 0.2rem;
+	background: #01b5ff;
+	margin: 0 auto;
+	margin-top: 0.23rem;
+}
+.wenben{
+	width: 100%;
+	height: 6.64rem;
+	background: #f5f6fa;
+}
+.wenben1{
+	width: 7.01rem;
+	height: 6.4rem;
+	background: #fff;
+	margin: 0 auto;
+}
+.wenben2{
+	width: 6.42rem;
+	height: 6.3rem;
+	background:#fff;
+	margin: 0 auto;
+	padding-top: 0.1rem;
+}
+.wenben2 p{
+	font-size: 0.23rem;
+	color: #666666;
+}
+.qiye{
+	width: 100%;
+	height: 0.65rem;
+	background: #f5f6fa;
+	margin-top: 6.6rem;
+}
+.wenhua{
+	width: 100%;
+	height: 2.46rem;
+	background: #f5f6fa;
+	margin: 0 auto;
+}
+.wenhua1{
+	width: 7.05rem;
+	height: 2.26rem;
+	background: blue;
+	margin: 0 auto;
+}
+.wenhua1 img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.qiye1{
+	height: 0.64rem;
+	margin-top: 0;
+}
+.linian{
+	width: 100%;
+	height: 0.84rem;
+	background: #f5f6fa;
+}
+.linian1{
+	width: 7.05rem;
+	height: 0.64rem;
+	background: #fff;
+	margin: 0 auto;
+}
+
+.linian2{
+	width: 6.7rem;
+	height: 100%;
+	float: right;
+	font-size: 0.23rem;
+	line-height: 0.64rem;
+	color: #666666;
+}
+.baoming{
+	width: 100%;
+	height: 2.13rem;
+	background: #f5f6fa;
+}
+.baoming1{
+	width: 2.13rem;
+	height: 2.13rem;
+	margin: 0 auto;
+}
+.baoming1 img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.dibu{
+	width: 100%;
+	height: 0.88rem;
+	background: #f5f6fa;
+	text-align: center;
+	font-size: 0.17rem;
+	color: #8a8a8b;
+}

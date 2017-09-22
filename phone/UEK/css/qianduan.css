@@ -1,0 +1,292 @@
+/*
+* @Author: Lenovo
+* @Date:   2017-07-20 13:27:38
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-07-22 16:25:51
+*/
+@font-face {
+  font-family: 'iconfont';  /* project id 360233 */
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot');
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.svg#iconfont') format('svg');
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+	background: #0078e6;
+	position: fixed;
+	z-index: 999;
+}
+.haitun{
+	width: 0.72rem;
+	height: 0.67rem;
+	float: left;
+	margin-left: 2.7rem;
+	margin-top: 0.15rem;
+}
+.haitun img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+h3{
+	font-size: 0.36rem;
+	float: left;
+	text-align: center;
+	line-height: 0.92rem;
+	color: #fff;
+	font-family: "黑体";
+}
+.banner{
+	width: 100%;
+	height: 2.8rem;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.shouye{
+	width: 100%;
+	height: 0.86rem;
+	background: #f5f6fa;
+	font-size: 0.21rem;
+	font-family: "黑体";
+	line-height: 0.86rem;
+}
+.shouye a{
+	font-size: 0.21rem;
+	font-family: "黑体";
+	line-height: 0.86rem;
+	color: #494747;
+	display: block;
+	margin-left: 0.2rem;
+}
+
+
+.end{
+	width: 100%;
+	height: 1rem;
+	background: #f5f6fa;
+	text-align: center;
+	font-size: 0.17rem;
+	padding-top: 0.2rem;
+	color: #8a8a8b;
+}
+.our{
+	width: 100%;
+	height: 2.38rem;
+	background: #f5f6fa;
+}
+.our1{
+	width: 6.75rem;
+	height: 2.28rem;
+	margin: 0 auto;
+	background: #fff;
+	padding-left: 0.3rem;
+}
+.our1-1{
+	width: 1.53rem;
+	height: 2.28rem;
+	background: yellow;
+	margin-right: 0.1rem;
+	float: left;
+}
+.our1-11{
+	width: 1.53rem;
+	height: 1.64rem;
+	background: red;
+}
+.our1-11 img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.our1-12{
+	width: 1.53rem;
+	height: 0.64rem;
+	background: #fff;
+	font-size: 0.24rem;
+	text-align: center;
+}
+.qianduan{
+	width: 100%;
+	height: 4.9rem;
+	background: #f5f6fa;
+	/* margin-bottom: 0.2rem; */
+}
+.qianduan1{
+	width: 7.05rem;
+	height: 4.8rem;
+	background: #fff;
+	margin: 0 auto;
+}
+.qd{
+	width: 100%;
+	height: 0.64rem;
+	background: #fff;
+}
+.qd-l{
+	width: 0.4rem;
+	height: 100%;
+	float: left;
+}
+.qd-2{
+	width: 6.4rem;
+	height: 100%;
+	float: left;
+	border-bottom: 0.01rem dashed #888686;
+	box-sizing: border-box;
+	font-size: 0.24rem;
+	line-height: 0.8rem;
+}
+.qd-b{
+	width: 6.42rem;
+	height: 3.83rem;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 0.17rem;
+}
+.qd-b img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.qd-b pre{
+	font-size: 0.21rem;
+	color: #666666;
+}
+.qd-b pre b{
+	color: #01b5ff;
+}
+.qd-11{
+	width: 0.07rem;
+	height: 0.22rem;
+	background: #01b5ff;
+	margin-left: 0.2rem;
+	margin-top: 0.3rem;
+}
+.jiuye{
+	width: 100%;
+	height: 5.6rem;
+	background: #f5f6fa;
+}
+.jiuye1{
+	width: 7.05rem;
+	height: 5.5rem;
+	background:#fff;
+	margin: 0 auto;
+}
+.b1{
+	width: 100%;
+	height: 0.15rem;
+	background: #fff;
+}
+.gongcheng{
+	width: 6.17rem;
+	height: 0.59rem;
+	background: #fff;
+	margin-left: 0.4rem;
+	margin-bottom: 0.18rem;
+}
+.gongcheng1{
+	width: 0.56rem;
+	height: 0.56rem;
+	background: #fff;
+	float: left;
+}
+.gongcheng1 img{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.gongcheng2{
+	width: 5.3rem;
+	height: 100%;
+	float: left;
+	background: #fff;
+	padding-left: 0.2rem;
+}
+.gongcheng2 p{
+	font-size: 0.2rem;
+	color: #01b5ff;
+}
+.gongcheng2 pre{
+	font-size: 0.14rem;
+	color: #000;
+	font-family: "黑体";
+}
+.xingming{
+	width: 7.05rem;
+	height: 0.6rem;
+	background: #fff;
+	font-size: 0.24rem;
+}
+.xingming pre{
+	line-height: 0.6rem;
+}
+.zhang{
+	width: 7.05rem;
+	height: 0.57rem;
+	background: #fff;
+	position: relative;
+}
+.zhang1{
+	width: 0.3rem;
+	height: 0.57rem;
+	float: left;
+	background: #fff;
+	border-right: 0.01rem dashed #01b5ff;
+	
+}
+.fu1{
+	width: 0.19rem;
+	height: 0.19rem;
+	background: #94e0ff;
+	border-radius: 50%;
+	position: absolute;
+	left: 0.22rem;
+	top: 0.18rem;
+}
+.fu2{
+	width: 0.1rem;
+	height: 0.1rem;
+	background: #01b5ff;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 0.05rem;
+}
+.zhang2{
+	width: 6.6rem;
+	height: 0.57rem;
+	background:#fff;
+	    /* display: block; */
+    /* margin-left: 0.15rem; */
+    float: right;
+}
+.zhang2 pre{
+
+	font-size: 0.11rem;
+	line-height: 0.57rem;
+}
+.zhang2 pre b{
+	color: #ffa201;
+}
+.jiuye2{
+	width: 6.72rem;
+	height: 4.20rem;
+	margin: 0 auto;
+}
+.jiuye2 img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}

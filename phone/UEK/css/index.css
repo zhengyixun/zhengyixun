@@ -1,0 +1,257 @@
+/*
+* @Author: Lenovo
+* @Date:   2017-07-20 13:27:38
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-07-21 08:50:35
+*/
+@font-face {
+  font-family: 'iconfont';  /* project id 360233 */
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot');
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.svg#iconfont') format('svg');
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+	background: #0078e6;
+	position: fixed;
+	z-index: 999;
+}
+.haitun{
+	width: 0.72rem;
+	height: 0.67rem;
+	float: left;
+	margin-left: 2.7rem;
+	margin-top: 0.15rem;
+}
+.haitun img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+h3{
+	font-size: 0.36rem;
+	float: left;
+	text-align: center;
+	line-height: 0.92rem;
+	color: #fff;
+	font-family: "黑体";
+}
+.banner{
+	width: 100%;
+	height: 2.8rem;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+/* nav开始 */
+.nav{
+	width: 100%;
+	height: 4.8rem;
+	background: #f5f6fa;
+}
+.nav1{
+	width: 25%;
+	height: 50%;
+	background: #f4f5f9;
+	float: left;
+	overflow: hidden;
+}
+.nav1-top{
+	width: 1.55rem;
+	height: 1.55rem;
+	background: #f4f5f9;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+}
+.nav1-top img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.nav1-bot{
+	width: 100%;
+	height: 0.5rem;
+	background: #f4f5f9;
+	overflow: hidden;
+}
+.nav1-bot h4{
+	font-size: 0.19rem;
+	color: #000;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+/* nav结束 */
+/* 服务体系开始 */
+.fuwu{
+	width: 100%;
+	height: 4.2rem;
+	background: #fff;
+}
+.fwtx{
+	width: 100%;
+	height: 0.65rem;
+}
+.fwtx h3{
+	font-size: 0.22rem;
+	color: #0377bc;
+	line-height: 0.65rem;
+	display: block;
+	margin-left: 3.2rem;
+}
+.fu1{
+	width: 50%;
+	height: 2.2rem;
+	border-right: 0.01rem solid #e8e8e8;
+	box-sizing: border-box;
+	float: left;
+}
+.fuwu11{
+	border-right: 0;
+}
+
+.fu1-1{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.fu1-1 img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.fuwu .fu1-1 .h5{
+	display: block;
+	font-size: 0.14rem;
+	color: #b0b0b0;
+	margin-top: 0.1rem;
+	margin-left: 0.12rem;
+}
+.fu1-1 a {
+	font-size: 0.22rem;
+	color: #000;
+	display: block;
+	margin-left: 0.1rem;
+	margin-top: 0.2rem;
+}
+.fu1-1 a .jk{
+	display: block;
+	font-size: 0.17rem;
+}
+.fu2{
+	width: 33.333333%;
+	height: 1.35rem;
+	box-sizing: border-box;
+	float: left;
+	background: #fff;
+	border-top: 0.01rem solid #e8e8e8;
+	border-right: 0.01rem solid #e8e8e8;
+	border-bottom: 0.01rem solid #e8e8e8;
+}
+.fu22{
+	border-right: 0;
+}
+.fu2-1{
+	width: 0.99rem;
+	height: 100%;
+	background:#fff;
+	float: left;
+}
+.fu2-2{
+	width: 1.42rem;
+	height: 100%;
+	background:#fff;
+	float: left;
+}
+a .ting{
+	font-size: 0.24rem;
+	color: #000;
+	display: block;
+	margin-top: 0.2rem;
+}
+.fu2-2 a .ting1{
+	font-size: 0.1rem;
+	color: #999999;
+	display: block;
+	margin-top: 0.2rem;
+}
+.fu2-1 img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+/* 服务体系结束 */
+footer{
+	width: 100%;
+	height: 1.4rem;
+	background: #f5f6fa;
+	overflow: hidden;
+}
+.call{
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	margin-top: 0.23rem;
+	position: relative;
+}
+.chaxun,.chaxun1{
+	width: 2.24rem;
+	height: 0.8rem;
+	float: left;
+}
+.chaxun1{
+	float: right;
+}
+.chaxun .iconfont,.chaxun1 .iconfont{
+	font-family: 'iconfont'; 
+	font-size: 0.4rem;
+	color: #666666;
+	margin-top: 0.17rem;
+	margin-left: 0.2rem;
+	float: left;
+}
+.chaxun1 .iconfont{
+	margin-left: 0.45rem;
+	margin-top: 0.2rem;
+}
+.chaxun h3,.chaxun1 h3{
+	color: #000;
+	font-size: 0.22rem;
+	float: left;
+	line-height: 0.8rem;
+}
+.call1{
+	width: 2.4rem;
+	height: 0.8rem;
+	background: #ff7e00;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 0.1rem;
+}
+.call1 .iconfont{
+	font-family: 'iconfont'; 
+	font-size: 0.4rem;
+	color: #fff;
+	margin-top: 0.17rem;
+	margin-left: 0.4rem;
+	float: left;
+}
+.call1 h3{
+	color: #fff;
+	font-size: 0.22rem;
+	float: left;
+	line-height: 0.8rem;
+}

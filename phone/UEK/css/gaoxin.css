@@ -1,0 +1,227 @@
+/*
+* @Author: Lenovo
+* @Date:   2017-07-20 13:27:38
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2017-07-21 08:50:29
+*/
+@font-face {
+  font-family: 'iconfont';  /* project id 360233 */
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot');
+  src: url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_yi2z13c4hzn6ogvi.svg#iconfont') format('svg');
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+	background: #0078e6;
+	position: fixed;
+	z-index: 999;
+}
+.haitun{
+	width: 0.72rem;
+	height: 0.67rem;
+	float: left;
+	margin-left: 2.7rem;
+	margin-top: 0.15rem;
+}
+.haitun img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+h3{
+	font-size: 0.36rem;
+	float: left;
+	text-align: center;
+	line-height: 0.92rem;
+	color: #fff;
+	font-family: "黑体";
+}
+.banner{
+	width: 100%;
+	height: 2.8rem;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.shouye{
+	width: 100%;
+	height: 0.86rem;
+	background: #f5f6fa;
+	font-size: 0.21rem;
+	font-family: "黑体";
+	line-height: 0.86rem;
+}
+.shouye a{
+	font-size: 0.21rem;
+	font-family: "黑体";
+	line-height: 0.86rem;
+	color: #494747;
+	display: block;
+	margin-left: 0.2rem;
+}
+.xueyuan{
+	width: 100%;
+	height: 2rem;
+	background: #f5f6fa;
+}
+.xueyuan1{
+	width: 7rem;
+	height: 1.9rem;
+	margin: 0 auto;
+	background: #fff;
+}
+.xueyuan2{
+	width: 6.83rem;
+	height: 1.45rem;
+	background: blue;
+	float: right;
+	margin-top: 0.2rem;
+}
+.xueyuan2-1{
+	width: 1.94rem;
+	height: 100%;
+	background: #c8c8c8;
+	float: left;
+}
+.xueyuan2-2{
+	width: 4.89rem;
+	height: 100%;
+	background: #fff;
+	float: left;
+
+}
+.ding h2{
+	font-size: 0.24rem;
+}
+.ding{
+	width: 1rem;
+	height: 0.39rem;
+	background: #fff;
+	border-bottom: 0.01rem dashed #000;
+	float: left;
+	margin-top: 0.3rem;
+	margin-left: 0.2rem;
+}
+.ding1{
+	width: 2rem;
+	height: 0.3rem;
+	background: #fff;
+	float: left;
+	margin-top: 0.35rem;
+	margin-left: 0.2rem;
+}
+.ding1 span{
+	font-size: 0.14rem;
+	float: left;
+	color: #444444;
+}
+.ding2{
+	width: 4rem;
+	height: 0.3rem;
+	background: #fff;
+	margin-top: 0.35rem;
+}
+.ding2 span{
+	font-size: 0.26rem;
+	float: left;
+	color: #94d43b;
+	margin-left: 0.2rem;
+}
+.ding22 span{
+	color: #000;
+}
+/* 页码开始 */
+.ye{
+	width: 100%;
+	height: 0.7rem;
+	background: #fff;
+	overflow: hidden;
+	padding-top: 0.2rem
+}
+.ye-left{
+	width: 5.16rem;
+	height: 0.5rem;
+	background: #fff;
+	float: left;
+	padding-left: 0.3rem;
+}
+.ye-right{
+	width: 2.04rem;
+	height: 0.7rem;
+	background:#fff;
+	float: left;
+	
+}
+.tiao{
+	width: 1rem;
+	height:0.3rem;
+	float: left; 
+	font-size: 0.16rem;
+	color: #000;
+	line-height: 0.5rem;	
+}
+.y1{
+	width: 0.6rem;
+	height: 0.4rem;
+	background: #fff;
+	border: 0.01rem solid #b4b4b4;
+	border-radius: 0.18rem;
+	float: left;
+	margin-right: 0.14rem;
+}
+.y11{
+	width: 0.48rem;
+	height: 0.24rem;
+	margin: auto;
+	background: #fff;
+	border-radius: 0.12rem;
+	margin-top: 0.07rem;
+	border: 0.01rem solid #b4b4b4;
+	font-size: 0.1rem;
+	text-align: center;
+	line-height: 0.25rem;
+	color: #01b5ff;
+}
+.y2{
+	width: 0.4rem;
+	height: 0.4rem;
+	background: #fff;
+	border: 0.01rem solid #b4b4b4;
+	border-radius: 50%;
+	float: left;
+	margin-right: 0.14rem;
+}
+.y22{
+	width: 0.26rem;
+	height: 0.26rem;
+	margin: auto;
+	background: #fff;
+	border-radius: 50%;
+	margin-top: 0.05rem;
+	border: 0.01rem solid #b4b4b4;
+	font-size: 0.1rem;
+	text-align: center;
+	line-height: 0.25rem;
+	color: #b4b4b4;
+}
+/* 页码结束 */
+.end{
+	width: 100%;
+	height: 1rem;
+	background: #f5f6fa;
+	text-align: center;
+	font-size: 0.17rem;
+	padding-top: 0.2rem;
+	color: #8a8a8b;
+}
