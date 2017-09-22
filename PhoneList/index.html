@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />	
+		 <meta name="viewport" content="width=device-width intial-scale=1.0 minmum-scale=1.0 maxmum=1.0 user-scaleable=no">
+		 <script type="text/javascript" src="js/rem.js"></script>
+		<title>PhoneList</title>
+	</head>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+		list-style: none;
+		text-decoration: none;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+	header{
+		width: 100%;
+		height: 0.8rem;
+		background: red;
+		position: fixed;
+		top:0;
+		left:0;
+	}
+	.inp{
+		width: 80%;
+		height: 0.6rem;
+		margin: 0 auto;
+		margin-top: 0.1rem;
+	}
+	input{
+		width: 100%;
+		height: 100%;
+		outline: none;
+		box-shadow: none;
+		border-radius: 0.05rem;
+		margin: 0 auto;
+		font-family: "黑体";
+		border: none;
+		font-size: 0.15rem;
+		background: #fff;
+		padding-left: 0.1rem;
+		float:left;
+		
+	}
+	dt{
+		width: 100%;
+		height: 0.5rem;
+		background: ghostwhite;
+		font-size: 14px;
+		font-family: "黑体";
+		border-bottom: 0.01rem solid #F8F8FF;
+	}
+	main{
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 0.8rem;
+		overflow: hidden;
+	}
+	dd,dt{
+		width: 100%;
+		height: 0.8rem;
+		line-height: 0.8rem;
+		padding-left: 0.05rem;
+	}
+	dd{
+		line-height: 0.1rem;
+	}
+	dd{
+		width: 100%;
+		height: 0.8rem;
+		font-family: "黑体";
+		font-size: 0.14rem;
+		color: #000;
+		line-height: 0.85rem;
+		text-align: left;
+	}
+	a{
+		display: block;
+		width: 0.2rem;
+		height: 100%;
+		float: left;
+	}
+	.head{
+		width: 0.65rem;
+		height: 0.65rem;
+		border-radius: 50%;
+		background: red;
+		float: left;
+		margin-top: 0.1rem;
+		background-image: url('img/tou.jpeg');
+	}
+	.head img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;	
+	}
+	.tip{
+		width: 90%;
+		height: 0.8rem;
+		position: fixed;
+		top:0.8rem;
+		left:5%;
+		background: gray;
+		font-size: 0.3rem;
+		color: #000;
+		line-height: 0.8rem;
+		background: ghostwhite;
+	}
+	.slide{
+		height: 50%;
+		width: 0.3rem;
+		position: fixed;
+		right: 0rem;
+		top:3rem;
+	}
+	.zimu{
+		width: 0.3rem;
+		height: 0.3rem;
+		margin-top: 0.02rem;
+		text-align: center;
+		line-height: 0.3rem;
+		color: grey;
+		font-size: 0.13rem;
+		/*background: green;*/
+	}
+	.act{
+		color: red;
+		background: red;
+	}
+</style>
+	<body>
+		<header>
+			<div class="inp">
+				<input type="text" placeholder="搜索" />
+			</div>
+			<div class="tip"></div>
+		</header>
+		<main>
+			<dl>
+			</dl>
+		</main>
+		<div class="slide">
+			
+		</div>
+	</body>
+</html>
+
+<!--
+	姓名   电话  拼音
+	获取数据
+	按拼音首字母
+	dateObj={
+		'A':[{},{}.{}]
+	}
+	let keys = Object.key(date.obj).sort()  键名	
+-->
+<script>
+window.onload=function(){
+	let tbody=document.querySelector('tbody')
+	//获取数据
+	let men=[
+		{'name':'张三','phone':'1966798520','pinyin':'zhangsan'},
+		{'name':'李四','phone':'1236798520','pinyin':'lisi'},
+		{'name':'王五','phone':'1456798520','pinyin':'wangwu'},
+		{'name':'赵六','phone':'1346798520','pinyin':'zhaoliu'},
+		{'name':'五七','phone':'1946798520','pinyin':'wuqi'},
+		{'name':'钱吧','phone':'1346798520','pinyin':'qianba'},
+		{'name':'郑九','phone':'1346798520','pinyin':'zhengjiu'},
+		{'name':'A1','phone':'1346798520','pinyin':'A1'},
+		{'name':'B1','phone':'1346798520','pinyin':'B1'},
+		{'name':'C1','phone':'1346798520','pinyin':'C1'},
+		{'name':'D1','phone':'1346798520','pinyin':'D1'},
+		{'name':'F1','phone':'1346798520','pinyin':'F1'},
+		{'name':'F2','phone':'1346798520','pinyin':'F2'},
+		{'name':'F3','phone':'1346798520','pinyin':'F3'},
+		{'name':'G6','phone':'1346798520','pinyin':'G6'},
+		{'name':'E7','phone':'1346798520','pinyin':'E7'},
+		{'name':'R6','phone':'1346798520','pinyin':'R6'},
+		{'name':'T6','phone':'1346798520','pinyin':'T6'},
+		{'name':'J4','phone':'1346798520','pinyin':'J4'},
+		{'name':'Q1','phone':'1446798520','pinyin':'Q1'},
+		{'name':'P3','phone':'1546798520','pinyin':'P3'},
+		{'name':'I3','phone':'1456798520','pinyin':'I3'},
+		{'name':'P5','phone':'1636798520','pinyin':'P5'},
+		{'name':'D5','phone':'1896798520','pinyin':'D5'},
+		{'name':'XX','phone':'1906798520','pinyin':'XX'},
+		{'name':'C111','phone':'1846798520','pinyin':'C111'},
+		{'name':'SSS','phone':'1346798520','pinyin':'SSS'},
+	]
+let dl = document.querySelector('dl')
+let header=document.querySelector('header')   //获取header
+let inputs=document.querySelector('input')   //获取input
+let tips=document.querySelector('.tip')     //获取tips
+let heights=tips.offsetHeight+header.offsetHeight       //gao
+
+
+let data=getDate()
+function getDate(){
+let data=localStorage.getItem('men')?JSON.parse(localStorage.men):false
+    if(!data){
+   		localStorage.setItem('men',JSON.stringify(men))//json字符串
+		data=JSON.parse(localStorage.men)//json字符串转为json对象
+    }
+    return data
+}
+//
+//搜索
+inputs.onkeyup=function(){
+	//input中输入的值
+	let value=inputs.value.trim();
+	//在data中匹配
+	let filter=data.filter(element=>element.name.includes(value)||element.pinyin.includes(value));  //||element.phone.includes(value)
+	    render(filter);
+}
+ 
+
+function render (data) {
+	let dataObj = {}
+	for(let i = 0;i<data.length;i++){
+		let  first = data[i].pinyin.charAt(0).toUpperCase();
+		if(!dataObj[first]){
+			dataObj[first] = []
+		}
+		dataObj[first].push(data[i])
+	}
+	let keys = Object.keys(dataObj).sort()
+	
+	dl.innerHTML=""
+	keys.forEach( element=> {
+		dl.innerHTML+=`
+		<dt>${element}</dt>
+		`		
+	dataObj[element].forEach(value=>{
+		dl.innerHTML +=`
+		<dd>
+			<div class="head"></div>
+			<a href="${value.phone}"></a>${value.name}
+		</dd>
+		`
+	})
+	});	
+//	return keys
+	tips.innerText=keys[0]
+	//上滑框  
+let dd=document.querySelector('dd')
+let dt=document.querySelectorAll('dt') 
+let arr=[]   
+dt.forEach(element=>{
+	return arr.push(element.offsetTop)
+})
+window.onscroll=function(){
+	let st=document.body.scrollTop
+	arr.forEach(function(value,index){
+		if(value+dt[0].offsetHeight<st+heights){
+			tips.innerText=keys[index]
+		}
+	})
+}	
+return dl
+}
+getDate();
+render(data);
+//侧边栏
+let slide=document.querySelector('.slide')
+let dtt=document.querySelectorAll('dt')
+let stt=document.body.scrollTop
+let ch=window.innerHeight  
+let nth=0
+for(let i=0;i<dtt.length;i++){
+	let zimu=document.createElement('div')
+	zimu.classList.add('zimu')
+	slide.appendChild(zimu)	
+	zimu.innerText=	`${dtt[i].innerText}`
+}
+let posArr=[]                                 //用来存放ul 距离
+	dtt.forEach(element=>{                          //遍历ul 放到数组中
+		posArr.push(element.offsetTop)	              // body超出浏览器的距离
+	})
+
+let zm=document.querySelectorAll('.zimu')
+//console.log(zm)
+//window.onscroll=function(){
+//posArr.forEach((element,index)=>{       //遍历获取到的ul的位置*遍历posArr
+//		if(ch+stt>element){	            //如果浏览器高度+滚动条距离>ul的位置
+//			zm[nth].classList.remove('act')        //右侧页码随滚动条移动显示不同位置
+//			zm[index].classList.add('act')
+//			nth=index
+//		}
+//	})
+//}
+
+
+}
+</script>

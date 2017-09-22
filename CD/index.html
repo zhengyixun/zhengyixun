@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>canvas</title>
+	</head>
+	<body>
+		<canvas width="300" height="300"></canvas>
+	</body>
+</html>
+<style>
+	canvas{
+		border: 1px solid #ff6700;
+	}
+</style>
+<script>
+	let canvas=document.querySelector('canvas')
+	let bi=canvas.getContext('2d')
+//	console.dir(bi)
+//	bi.fillRect( 100,25,100,100)
+	/*      
+	 正中间  100*100
+	 css中调整canvas 相当于放大缩小效果 */
+//	//填充三角形
+//	bi.beginPath()    //开始路径
+//	bi.moveTo(20,20)   //移动
+//	bi.lineTo(20,120)  //移动到某个点
+//	bi.lineTo(120,120)
+//	bi.closePath()     //闭合路径
+//	bi.fill()       //填充
+//	
+//	//描边三角形
+//	bi.beginPath()
+//	bi.moveTo(40,20)
+//	bi.lineTo(140,20)
+//	bi.lineTo(140,120)
+//	bi.closePath()
+//	bi.stroke()
+	//圆
+//	bi.beginPath()
+//	bi.arc(150,150,100,0.PI,2*Math.PI)
+//	bi.stroke()
+//	
+//            	     bi.fillStyle='deepskyblue'
+//	                 bi.beginPath()
+//	         		  bi.arc(150,150,100,0,2*Math.PI)
+//	                  bi.stroke()
+//						bi.fill()
+//	
+//	bi.beginPath()
+//	bi.moveTo(210,150)
+//	bi.arc(150,150,60,0,Math.PI)
+//	bi.fill()
+//	bi.fillStyle='blue'
+//	bi.beginPath()
+//	bi.moveTo(130,110)
+//	bi.arc(110,110,20,0,2*Math.PI)
+//	bi.fill()
+//
+//	bi.beginPath()
+//	bi.moveTo(210,110)
+//	bi.arc(190,110,20,0,2*Math.PI)
+//	bi.fill()
+
+
+
+/*
+ * ang=360/变数/180*Math.PI
+ * r*cos(ang）+150
+ r*sin(ang）+150
+ * */
+//function duobianxing(bian){              //画一个多变形
+//	let ang=360/bian/180*Math.PI
+//	bi.beginPath()
+//	bi.moveTo(150+100,150)
+//	for(let i=1;i<5;i++){
+//		bi.lineTo(100*Math.cos(ang*i)+150,100*Math.sin(ang*i)+150)
+//	}
+//	bi.closePath()
+//	bi.fill()
+//}	
+//duobianxing(5)
+
+
+
+
+/*
+ * t=setinter  最小频率是4
+ * 
+ * n*Math2PI/100
+ * 
+ * linewidth
+ * linecap ='round'  设置线的端点
+ */
+
+//利用时间函数制作一个CD圈
+let t
+let num=1
+fn()
+function fn(){
+	let end=num*(2*Math.PI/100)
+	num++
+	if(num==80){
+		cancelAnimationFrame(t)
+	}else{
+		t=requestAnimationFrame(fn)      //相当于setTimeOut  只执行一次
+	}
+	bi.lineCap='round'   //设置线的端点
+	bi.lineWidth=10       //设置线的粗细
+	
+	bi.clearRect(0,0,300,300)
+	bi.beginPath()
+	bi.font="40px Arial"
+	bi.textAlign='center'
+	bi.textBaseline='middle'
+	bi.fillText(`${num}%`,150,150)
+	bi.arc(150,150,100,-0.5*Math.PI,end-0.5*Math.PI)
+	bi.stroke()
+}
+</script>

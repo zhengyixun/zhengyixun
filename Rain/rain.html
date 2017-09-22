@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rain</title>
+</head>
+<body>
+	
+</body>
+</html>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		width: 100%;
+		height: 100%;
+		background: black;
+		overflow: hidden;
+		background-image: url('banner.jpeg');
+		background-repeat: no-repeat;
+		background-size: 1360px 700px;
+	}
+	.rain{
+		width: 1px;
+		height: 20px;
+		background: #fff;
+		position: absolute;
+		left: 100px;
+		top: 100px;
+		filter: blur(1px);
+		transition: 1s
+	}
+</style>
+<script>
+
+rain=[]
+	for(let i=0;i<200;i++){
+		let divs=document.createElement('div')
+		divs.classList.add('rain')
+		let lefts=Math.random()*(window.innerWidth-200)+50
+		let tops=Math.random()*(-50)
+		divs.style.left=`${lefts}px`
+		divs.style.top=`${tops}px`
+		document.body.appendChild(divs)	
+		rain[rain.length]=divs
+	}
+	// console.log(rain)
+
+	document.onclick = function(){
+		let rain = document.querySelectorAll('.rain')
+		// console.log(rain)
+		rain.forEach(element=>{
+			element.style.top = `${innerHeight+50}px`
+			element.style.transitionDelay = `${Math.random()}s`         //延迟
+			
+			
+			element.addEventListener('webkitTransitionEnd',function(){   //添加事件监听
+
+			 element.style.transition='none'        //返回时迅速返回
+			 element.style.top='-50px';           //位置是-50px
+
+			 setTimeout(function(){
+			 	element.style.transition=`all,ease,${Math.random()}s`    //加延迟
+			 	element.style.top=`${innerHeight+50}px`
+			 },1)         
+			})
+
+
+		})
+	}
+</script>

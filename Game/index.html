@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = 'js/index.js'></script>
+</head>
+<body>
+
+	<div class="score">得分：<span>0</span></div>
+	<div class="life">生命：<span>10</span></div>
+    <div class="pic"><img src="img/play.png" alt=""></div>
+    <div class="pic1"><img src="img/play1.png" alt=""></div>
+    <!-- <div class="jifen"><img src="img/jifen.jpg" alt=""></div> -->
+</body>
+</html>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+.pic{
+	width: 500px;
+	height: 333px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 170px;
+	border-radius: /* 6 */0px;
+	box-shadow: 0 0 50px 10px lightgray;
+}
+.pic1{
+	width: 550px;
+	height: 380px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 130px;
+	cursor: pointer;
+}
+.pic1 img{
+	width: 100%;
+	height: 100%;
+}
+.char{
+	width: 100px;
+	height: 100px;
+	background: no-repeat center/contain;
+	font-size: 0px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+	font-family: "方正舒体";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+body{
+	width: 100%;
+	height: auto;
+	background-image: url(img/banner.jpg);
+	background-size: 1400px 710px;
+}
+.jifen{
+	width: 250px;
+	height: 180px;
+	position: absolute;
+	top: 0;
+	left: 20px;
+}
+.socre{
+	width: 100px;
+	height: 50px;
+	color: #0DA3E2;
+
+}
+.score>span{
+	color: #0DA3E2;
+	font-family: "方正舒体";
+	font-size: 30px;
+	z-index: 999;
+}
+.score{
+	color: #0DA3E2;
+	font-size: 30px;
+	font-family: "方正舒体";
+	margin-top: 20px;
+	margin-left: 20px;
+	z-index: 999;
+}
+.life{
+	color: #0DA3E2;
+	font-size: 30px;
+	font-family: "方正舒体";
+	margin-left: 20px;
+	z-index: 999;
+}
+.life>span{
+	color: #0DA3E2;
+	z-index: 999;
+}
+.pic1:hover{
+	transform: scale(1.1, 1.1) translate(0, -10px);
+	transition:  .5s
+}
+</style>
+<script>
+window.onload=function(){
+	let game = new Game()
+	let pic=document.querySelector('.pic')
+	let pic1=document.querySelector('.pic1')
+	pic1.onclick=function(){
+		pic1.style.display='none'
+		pic.style.display='none'
+		game.start()
+	}
+	
+}
+	
+</script>
